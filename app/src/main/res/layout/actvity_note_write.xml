@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_height="wrap_content"
+                android:text="@string/keyword" />
+
+            <EditText
+                android:id="@+id/note_keyword"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_height="wrap_content"
+                android:text="@string/time_plan" />
+
+            <EditText
+                android:id="@+id/note_time"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:maxLines="1" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/note_content"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:hint="@string/note_content"
+            android:padding="10dp" />
+    </ScrollView>
+</LinearLayout>

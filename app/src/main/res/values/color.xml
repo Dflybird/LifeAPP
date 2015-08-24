@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue300</color>
+
+    <color name="White">#fff</color>
+    <color name="blue300">#3f51b5</color>
+    <color name="grey100">#e5e5f5</color>
+    <color name="blue200">#95aee6</color>
+    <color name="white200">#ecf0f1</color>
+    <color name="red300">#ff0000</color>
+    <color name="blue100">#7676dc</color>
+    <color name="gray300">#b3b3b3</color>
+    <color name="black100">#121212</color>
+    <color name="grey200">#f8f8f8</color>
+</resources>

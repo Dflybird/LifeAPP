@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:listDivider">@drawable/divider_item</item>
+        <item name="android:colorControlNormal">@color/White</item>
+    </style>
+</resources>

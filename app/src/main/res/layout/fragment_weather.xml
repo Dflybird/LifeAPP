@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/background_weather"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_to_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/weather_today_time"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="00:00" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weather_release" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/weather_city"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    tools:text="" />
+
+                <ImageButton
+                    android:id="@+id/weather_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:src="@mipmap/location_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/weather_today_temp"
+                style="@style/TextAppearance.AppCompat.Display4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="70dp"
+                android:gravity="center"
+                tools:text="30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/weather_today_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="8/16" />
+
+                    <TextView
+                        android:id="@+id/weather_today_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/WD" />
+
+                        <TextView
+                            android:id="@+id/weather_today_WD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="@string/WD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/WS" />
+
+                        <TextView
+                            android:id="@+id/weather_today_WS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="@string/WS" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_weather"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp" />
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>
